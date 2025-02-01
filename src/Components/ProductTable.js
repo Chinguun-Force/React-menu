@@ -1,13 +1,12 @@
 import ProductCategoryRow from "./ProductCategoryRow";
 function ProductTable(props) {
-    // console.log(props)
+    console.log(props , "This is product table")
     return(
       <div>
         <div className="flex justify-between">
           <h3>Name</h3>
           <h3>Price</h3>
         </div>
-        {/* <ProductCategoryRow category={props.data[0].category}></ProductCategoryRow> */}
         <ProductCategoryRow category={props.neg[0]}></ProductCategoryRow>
       </div>      
     )

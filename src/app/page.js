@@ -166,6 +166,7 @@ export default function Home() {
     ]
   }
   ]
+  // console.log(DATA , "This is data")
   return (
     <FilteredAbleProducts data={DATA}></FilteredAbleProducts>
   )

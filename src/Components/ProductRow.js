@@ -1,5 +1,5 @@
 function ProductRow(props) {
-    console.log(props)
+    console.log(props, "This is product row")
     return(
       <div className="flex justify-between">
         <h3>{props.item[0].name}</h3>
