@@ -7,7 +7,9 @@ function ProductTable(props) {
           <h3>Name</h3>
           <h3>Price</h3>
         </div>
-        <ProductCategoryRow category={props.neg[0]}></ProductCategoryRow>
+      {props.neg.map((product, index) => (
+        <ProductCategoryRow key={index} category={product} />
+      ))}
       </div>      
     )
   }

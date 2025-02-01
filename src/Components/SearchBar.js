@@ -1,7 +1,7 @@
 function SearchBar() {
     return (
-      <form>
-        <input type="text" placeholder="Search..." />
+      <form className="">
+        <input type="text" placeholder="Search..." className="mr-12"/>
         <label>
           <input type="checkbox" />
           {' '}

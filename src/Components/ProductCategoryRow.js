@@ -4,7 +4,9 @@ function ProductCategoryRow(props) {
     return(
       <div>
         <h3 className="flex justify-self-center">{props.category.category}</h3>
-        <ProductRow item = {props.category.items}></ProductRow>
+        {props.category.items.map((item, index) => (
+          <ProductRow key={index} item={item} />
+        ))}
       </div>
     )
   }
